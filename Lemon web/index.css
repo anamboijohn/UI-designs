@@ -1,0 +1,136 @@
+#body{
+    background: #FECE2E;
+}
+#navbar-brand{
+display: flex;
+
+}
+#navItems{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+#nav-container{
+    display: flex;
+}
+.big-fruit{
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+
+}
+
+.fruit{
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    margin-top: -15vh;
+    position: absolute;
+    left: 35vw;
+}
+
+.btn1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#num{
+    color: #fff;
+    font-weight: 500;
+    border: solid 1px white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    font-size: larger;
+}
+.btn-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    top: 40vh;
+    left: 45vw;
+    border: solid 1px black;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    z-index: 9;
+}
+.btn2{
+    margin-left: 20px;
+}
+.btn3{
+    margin-left: 5px;
+}
+.btn-circle{
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    border: solid 1px white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    font-size: larger;
+    padding-left: 15px;
+
+}
+.btn-circle:hover{
+    background-color: #161615cc;
+    border: solid 1px #161615cc;
+}
+.btn-circle:active{
+    border: solid 1px #161615cc;
+    background: none;
+}
+
+.brand-line{
+    position: relative;
+}
+.brand-line:hover{
+    color: black;
+}
+.brand-line::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150%;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+}
+.brand-line:hover:after{
+    width: 100%;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.brand-line::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: -5px;
+    background-color: white;
+}
+.brand-line:hover::before{
+    width: 100%;
+    transition: 0.5s;
+    background-color: black;
+}
+.right{
+    position: absolute;
+    padding-left: 85vw;
+    top: 45vh;
+}
+.left{
+  position: absolute;
+  bottom: 45vh;
+  left: 5vw;
+}

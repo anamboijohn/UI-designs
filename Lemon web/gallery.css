@@ -1,0 +1,74 @@
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+.first{
+    background-image: url(img/greenGrass1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.rest{
+    background-image: url(img/greenGrass1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+
+/* flip effect */
+
+[class*='card'] {
+    perspective: 1000px; 
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  [class*='card']:active{
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-back {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background:green;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .back-text{
+      margin-top:50%;
+      margin-left: 20%;
+  }
+
+  #f{
+      font-family: Helvetica, sans-serif;
+      font-size:7rem;
+      margin-top: -1rem;
+      font-weight: 600;
+      }
+    #p{
+        font-family: cursive;
+        font-size: 4rem;
+        font-weight: 100;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+    .fp:hover{
+        color: white;
+        margin-left: 20%;
+        transition: ease-in 1s;
+    }
